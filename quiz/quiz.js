@@ -224,7 +224,7 @@ function checkAnswer(answer){
 } 
 
 function myFunc() { 
-    window.location.href="../surveyresult/surveyresult.html"; 
+    window.location.href="../surveyResult/surveyresult.html"; 
   }
 
 

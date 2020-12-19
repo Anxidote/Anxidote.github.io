@@ -15,35 +15,32 @@
         div#meters{
             position:absolute;
             background-color: rgb(181, 225, 233);
-            height: 250px;
+            height: 15vw;
+            width: 300px;
             top: 20%;
             left: 25%;
             border: rgb(87, 87, 87);
             border-style: ridge;
-            border-width: 8px;
+            border-width: 20%;
             border-radius: 15px;
         }
     
         div#meters div {
             
-            width: 250px;
-            height: 250px;
+            width: 15vw;
+            height: 15vw;
             align-items: center;
         }
         
         
-        div#chart-container4,
-        div#chart-container5,
-        div#chart-container6 {
-            position: relative !important;
-            left: 200px !important;
-            top: 280px !important;
-            width: 750px !important;
-            height: 70px !important;
+        div#chart-container1,
+        div#chart-container2,
+        div#chart-container3 {
+            position:sticky;
+         
         }
         
-        div#chart-container5 {top: 540px !important;}
-        div#chart-container6 {top: 340px !important;}
+        
 
         img {
             width: 1500px;
@@ -147,23 +144,23 @@
 
     </style>
 
-<img src="surveyresult.jpg" >
-
-    <h2>RESULTS BASED ON YOUR ANSWERS:</h2>
+<img src="surveyresult.jpg" style="z-index: -1;">
+<div align="center">
+    <h2 style="font-size: 1.2vw; line-height: normal; text-align: center; ">RESULTS BASED ON YOUR ANSWERS:</h2>
     
 
-    <div id="meters">
+    <div id="meters" style="align-items: center; position: absolute; width: max-content; z-index: 1;">
         <div id="chart-container1"></div>
         <div id="chart-container2"></div>
         <div id="chart-container3"></div>
-        <div id="chart-container4"></div>
+        
     </div>
     
-    <h1>Visit our home page to know more about these issues and ways to cope up!</h1>
+    <h1  style=" vertical-align: middle font-size">Visit our home page to know more about these issues and ways to cope up!</h1>
     
     <button class="button" style="vertical-align:middle" onclick="document.location = '../index.html'"><span>Home Page </span></button>
 
-
+</div>
     <script>
         // configured to appear as a donut chart. With there being only two
     // values given to the chart it makes the donut chart look like a
